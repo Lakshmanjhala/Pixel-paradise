@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXEL PARADISE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="pp.jpg" alt="Logo" class="logo">
+            <div class="nav-buttons">
+                <button>Home</button>
+                <button>Demo</button>
+                <button>Contact</button>
+                <a href="login.html"><button>Login</button></a>
+                <button id="gallery-button">Gallery</button>
+            </div>
+        </div>
+        <b><div class="title">PIXEL PARADISE</div></b>
+        <h2>The Ultimate Photo Gallery Website</h2>
+        <p>"PIXEL PARADISE is a website designed for saving and organizing your photos. It provides a secure and user-friendly platform where you can upload, store, and manage your precious memories. Whether you're a professional photographer or just someone who loves taking pictures, PIXEL PARADISE offers the tools and features you need to keep your photos safe and accessible. Enjoy a seamless experience with intuitive navigation, efficient storage solutions, and easy sharing options, all tailored to help you make the most of your photo collection."</p>
+        
+        <div class="photo-gallery">
+            <img src="collage.jpg" alt="photo" class="photo1">
+        </div>
+    
+        <div class="about">
+            <img src="sunset.webp" alt="About Pixel Paradise" class="about-image">
+            <div class="about-text">
+                <h3>Community and Inspiration</h3>
+                <p>Join the Pixel Paradise community to connect with other photography enthusiasts. Share your work, get inspired by others, and participate in photography challenges and events.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="gallery-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/640px-Altja_j%C3%B5gi_Lahemaal.jpg" alt="nature">
+                <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg">
+                <img src="https://thumbs.dreamstime.com/b/colorful-midwest-sunset-evening-america-57202504.jpg">
+                <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/magical-spring-forest-scenery-during-morning-breeze-free-photo.jpg?w=600&quality=80">
+                <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg">
+            </div>
+        </div>
+    </div>
+
+    <footer>-
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>Contact us: <a href="mailto:lakshmansinghjhala123123@gmail.com">lakshmansinghjhala123123@gmail.com</a></p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">About</a> | <a href="#">FAQ</a></p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/lakshman.jhala" target="_blank"><img src="instagram.jpeg" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/JhalaLaksh91888" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        var modal = document.getElementById("gallery-modal");
+
+        var btn = document.getElementById("gallery-button");
+
+        var span = document.getElementsByClassName("close")[0];
+ 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
